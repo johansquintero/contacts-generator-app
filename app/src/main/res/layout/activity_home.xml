@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_component"
+    tools:context="com.example.contacts.activities.HomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/titleCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/background_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/greetingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginBottom="120dp"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="Esto es un ejemplo"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:id="@+id/cardButtonScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="1000dp"
+                app:cardBackgroundColor="@color/background_fab">
+
+                <ImageView
+                    android:id="@+id/iconScan"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="32dp"
+                    android:src="@drawable/ic_scan"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/scanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:maxWidth="150dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/scan_contacts"/>
+
+
+            />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
